@@ -1,7 +1,7 @@
 
 ---
 applications:
-  - name: ec-chia-app-7
+  - name: ec-chia-server-1
     memory: 128M
     instances: 1
     stack: cflinuxfs2
