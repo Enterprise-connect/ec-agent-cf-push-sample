@@ -1,6 +1,6 @@
 applications:
   - name: ec-chia-server-1
-    memory: 128M
+    memory: 256M
     instances: 1
     stack: cflinuxfs2
     path: .
