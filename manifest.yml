@@ -1,8 +1,7 @@
+---
 applications:
-  - name: ec-chia-server-1
-    memory: 256M
-    instances: 1
-    stack: cflinuxfs2
-    path: .
-    command: bash ./ec.sh
-    buildpack: https://github.com/cloudfoundry/binary-buildpack.git
+- name: ec-demo-server-1
+  memory: 512M
+  instances: 1
+  command: bash ./ec-demo-gateway-1.sh
+  buildpack: https://github.com/cloudfoundry/binary-buildpack.git
