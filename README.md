@@ -9,7 +9,7 @@ cp ~/path/to/the/unzipped/ecagent_linux_sys ./
 ```
 Your EC Service should be bound to an app, if it is not already, please do so with:
 ```bash
-ec bind-service <any-app-in-your-org-space> <your-ec-service>
+cf bind-service <any-app-in-your-org-space> <your-ec-service>
 ```
 Get the VCAP of the app with:
 ```bash
