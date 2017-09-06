@@ -1,7 +1,7 @@
 ---
 applications:
-- name: ec-demo-server-1
+- name: ec-agent-app
   memory: 512M
   instances: 1
-  command: bash ./ec-demo-gateway-1.sh
+  command: bash ./ec.sh
   buildpack: https://github.com/cloudfoundry/binary-buildpack.git
