@@ -25,5 +25,5 @@ The following commands will be necessary to gain correct functionality of EC Age
 ```bash
 cf push --no-route 
 cf enable-diego <app name>
-cf map-route <app name> <(run.xxx.xxx.predix.io)> -n <app/route name>
+cf map-route <app name> <run.your.domain.predix.io> -n <app/route name>
 ```
