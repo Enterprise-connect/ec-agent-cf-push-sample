@@ -27,4 +27,8 @@ cf push --no-route
 cf enable-diego <app name>
 cf map-route <app name> <run.your.domain.predix.io> -n <app/route name>
 ```
-#### As mentioned, the route used in the *map-route* step needs to be created in that step. Simply deleting a route does not delete the associate route, unless the -r flag is added. You can run *cf routes* in your org/space to determine if the route was indeed deleted.
+#### As mentioned, the route used in the *map-route* step needs to be created in that step. Simply deleting an app does not delete the associate route, unless the -r flag is added. You can run *cf routes* in your org/space to determine if the route was indeed deleted. If unsure, or if you see a "ROUTE ALREADY EXISTS" warning upon the mapping step, please start over after doing this:
+
+```bash
+cf d -r <app name>
+```
