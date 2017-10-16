@@ -1,5 +1,5 @@
 # ec-agent-cf-push
- - A good example directory for pushing EC Agents to Cloud Foundry
+ - A step-by-step guide with accompanying example files for pushing an EC Agent to Predix.
 
 ## Usage
 Retrieve the Linux binary from https://github.com/Enterprise-connect/ec-sdk/tree/dist/dist and extract with:
