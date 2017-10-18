@@ -5,7 +5,6 @@
 Retrieve the Linux binary from https://github.com/Enterprise-connect/ec-sdk/tree/dist/dist and extract with:
 ```bash
 tar -xvzf ./path/to/ec-sdk/dist/ecagent_linux_sys.tar.gz
-cp ~/path/to/the/unzipped/ecagent_linux_sys ./
 ```
 Your EC Service should be bound to an app, if it is not already, please do so with:
 ```bash
