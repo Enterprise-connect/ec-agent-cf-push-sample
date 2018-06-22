@@ -6,6 +6,7 @@
 
 # Server
 #./ecagent_linux_sys -mod server -aid <VCAP_provided, "id"> \
+#-grp <agent group, Predix-Zone-ID by default> \
 #-cid <UAA_client_ID> -csc <UAA_client_Secret> -dur 3000 \
 #-oa2 https://<predixUAA_URL>/oauth/token \
 #-hst wss://<Predix_Gateway_App_URL>/agent \
@@ -16,6 +17,7 @@
 # Client
 #./ecagent_linux_sys -mod client \
 #-aid <Cannot be the same as Server -aid> -tid <EC Server -aid> \
+#-grp <agent group, Predix-Zone-ID by default> \
 #-cid <UAA_client_ID> -csc <UAA_client_Secret> -dur 3000 \
 #-oa2 https://<predixUAA_URL>/oauth/token \
 #-hst wss://<Predix_Gateway_App_URL>/agent \
