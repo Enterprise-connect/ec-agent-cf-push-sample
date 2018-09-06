@@ -26,7 +26,7 @@
 #
 #./ecagent_linux_sys -mod server -aid <agent ID> \
 #-grp <agent group> \
-#-cid -cid <UAA client ID> -csc <UAA client secret> -dur 3000 \
+#-cid <UAA client ID> -csc <UAA client secret> -dur 3000 \
 #-oa2 https://<Predix UAA Instance URI>/oauth/token \
 #-hst wss://<gateway URI>/agent \
 #-zon <EC Service GUID> -sst <EC Service URI ending in predix.io> \
@@ -40,7 +40,7 @@
 #./ecagent_linux_sys -mod client \
 #-aid <agent id> -tid <target/server ID> \
 #-grp <agent group> \
-#-cid -cid <UAA client ID> -csc <UAA client secret> -dur 3000 \
+#-cid <UAA client ID> -csc <UAA client secret> -dur 3000 \
 #-oa2 https://<Predix UAA Instance URI>/oauth/token \
 #-hst wss://<gateway URI>/agent \
 #-lpt <an available port>
