@@ -15,9 +15,10 @@
 # 				Gateway Agent   
 # -----------------------------------------------------
 #
-# ./ecagent_linux_sys -mod gateway -lpt ${PORT} \
+# ./ecagent_linux_sys -mod gateway -gpt ${PORT} \
 # -zon <EC Service GUID> -sst <EC Service URI ending in predix.io> \
-# -tkn <admin token>
+# -tkn <admin token> 
+# -hst <gatewayappname.domain part of sst uri>
 #
 #
 # -----------------------------------------------------
@@ -30,7 +31,7 @@
 #-oa2 https://<Predix UAA Instance URI>/oauth/token \
 #-hst wss://<gateway URI>/agent \
 #-zon <EC Service GUID> -sst <EC Service URI ending in predix.io> \
-#-rht 127.0.0.1 -rpt 5432
+#-rht 127.0.0.1 -rpt 5432 -hca 8080 -dbg
 #
 #
 # -----------------------------------------------------
@@ -44,7 +45,7 @@
 #-oa2 https://<Predix UAA Instance URI>/oauth/token \
 #-hst wss://<gateway URI>/agent \
 #-lpt <an available port>
-#
+#-pxy <proxy url, only if running from corporate network> 
 #
 # -----------------------------------------------------
 # 				Flag Usage Guide
